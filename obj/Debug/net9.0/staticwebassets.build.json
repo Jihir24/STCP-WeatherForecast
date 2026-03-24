@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "io519Lxx5X0LllxQI4TOAvyrYlbyFDrSsks6595b/so=",
+  "Source": "STCP-WeatherForecast",
+  "BasePath": "_content/STCP-WeatherForecast",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "STCP-WeatherForecast\\wwwroot",
+      "Source": "STCP-WeatherForecast",
+      "ContentRoot": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\",
+      "BasePath": "_content/STCP-WeatherForecast",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\obj\\Debug\\net9.0\\compressed\\bmsxqfqo9d-sfdud510ff.gz",
+      "SourceId": "STCP-WeatherForecast",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/STCP-WeatherForecast",
+      "RelativePath": "index#[.{fingerprint=sfdud510ff}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ogj0btvsvt",
+      "Integrity": "iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\index.html",
+      "SourceId": "STCP-WeatherForecast",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\",
+      "BasePath": "_content/STCP-WeatherForecast",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sfdud510ff",
+      "Integrity": "eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\obj\\Debug\\net9.0\\compressed\\bmsxqfqo9d-sfdud510ff.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002096436059"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 13:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 13:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\obj\\Debug\\net9.0\\compressed\\bmsxqfqo9d-sfdud510ff.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 13:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE="
+        }
+      ]
+    },
+    {
+      "Route": "index.sfdud510ff.html",
+      "AssetFile": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\obj\\Debug\\net9.0\\compressed\\bmsxqfqo9d-sfdud510ff.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002096436059"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 13:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfdud510ff"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg="
+        }
+      ]
+    },
+    {
+      "Route": "index.sfdud510ff.html",
+      "AssetFile": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 13:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfdud510ff"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg="
+        }
+      ]
+    },
+    {
+      "Route": "index.sfdud510ff.html.gz",
+      "AssetFile": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\obj\\Debug\\net9.0\\compressed\\bmsxqfqo9d-sfdud510ff.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 13:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sfdud510ff"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iNFTJKg+aU0DFDjKAjm1KAhVKppl0lOGc/ssCpt7mSE="
+        }
+      ]
+    }
+  ]
+}

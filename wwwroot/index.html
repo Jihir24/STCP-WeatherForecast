@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Tracker</title>
+</head>
+<body>
+    <h1>Weather Tracker</h1>
+
+    <button onclick="getWeather()">Get new weather data</button>
+
+    <h2>Weather history</h2>
+
+    <table border="1" id="weatherTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Temperature</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="weatherTableBody"></tbody>
+    </table>
+
+    <script>
+        async function getWeather() {
+            await fetch("/weather");
+            await loadHistory();
+        }
+
+        async function loadHistory() {
+            const response = await fetch("/history");
+            const data = await response.json();
+
+            console.log(data);
+
+            const tableBody = document.getElementById("weatherTableBody");
+            tableBody.innerHTML = "";
+
+            data.forEach(item => {
+                const row = document.createElement("tr");
+
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.temperature} °C</td>
+                    <td>${item.time}</td>
+                `;
+
+                tableBody.appendChild(row);
+            });
+        }
+
+        loadHistory();
+    </script>
+</body>
+</html>

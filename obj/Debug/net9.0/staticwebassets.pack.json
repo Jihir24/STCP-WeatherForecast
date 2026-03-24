@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Husai\\OneDrive\\Skrivebord\\STCP-WeatherForecast\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.STCP-WeatherForecast.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.STCP-WeatherForecast.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.STCP-WeatherForecast.props",
+      "PackagePath": "build\\STCP-WeatherForecast.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.STCP-WeatherForecast.props",
+      "PackagePath": "buildMultiTargeting\\STCP-WeatherForecast.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.STCP-WeatherForecast.props",
+      "PackagePath": "buildTransitive\\STCP-WeatherForecast.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
