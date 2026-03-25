@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using STCP_WeatherForecast.Data;
 using STCP_WeatherForecast.Services;
+using STCP_WeatherForecast.Observers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,16 +24,24 @@ using (var scope = app.Services.CreateScope())
 // Endpoint: get new weather
 app.MapGet("/weather", async (WeatherService service) =>
 {
+    service.AddObserver(new ConsoleWeatherObserver());
+
     var temp = await service.GetWeatherFromApiAsync();
     await service.SaveWeatherAsync(temp);
 
     return Results.Ok(new { temperature = temp });
 });
 
-// Endpoint: get history
+// Endpoint: get full history
 app.MapGet("/history", (WeatherService service) =>
 {
     return Results.Ok(service.GetHistory());
+});
+
+// Endpoint: get last 5 measurements
+app.MapGet("/history/last5", (WeatherService service) =>
+{
+    return Results.Ok(service.GetLastFive());
 });
 
 app.UseDefaultFiles();

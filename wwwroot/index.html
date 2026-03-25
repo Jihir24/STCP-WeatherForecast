@@ -8,6 +8,8 @@
     <h1>Weather Tracker</h1>
 
     <button onclick="getWeather()">Get new weather data</button>
+    <button onclick="loadLastFive()">Show last 5 measurements</button>
+    <button onclick="loadHistory()">Show full history</button>
 
     <h2>Weather history</h2>
 
@@ -22,35 +24,42 @@
         <tbody id="weatherTableBody"></tbody>
     </table>
 
-    <script>
-        async function getWeather() {
-            await fetch("/weather");
-            await loadHistory();
-        }
+   <script>
+    async function getWeather() {
+        await fetch("/weather");
+        await loadHistory();
+    }
 
-        async function loadHistory() {
-            const response = await fetch("/history");
-            const data = await response.json();
+    async function loadHistory() {
+        const response = await fetch("/history");
+        const data = await response.json();
+        renderTable(data);
+    }
 
-            console.log(data);
+    async function loadLastFive() {
+        const response = await fetch("/history/last5");
+        const data = await response.json();
+        renderTable(data);
+    }
 
-            const tableBody = document.getElementById("weatherTableBody");
-            tableBody.innerHTML = "";
+    function renderTable(data) {
+        const tableBody = document.getElementById("weatherTableBody");
+        tableBody.innerHTML = "";
 
-            data.forEach(item => {
-                const row = document.createElement("tr");
+        data.forEach(item => {
+            const row = document.createElement("tr");
 
-                row.innerHTML = `
-                    <td>${item.id}</td>
-                    <td>${item.temperature} °C</td>
-                    <td>${item.time}</td>
-                `;
+            row.innerHTML = `
+                <td>${item.id}</td>
+                <td>${item.temperature} °C</td>
+                <td>${item.time}</td>
+            `;
 
-                tableBody.appendChild(row);
-            });
-        }
+            tableBody.appendChild(row);
+        });
+    }
 
-        loadHistory();
-    </script>
+    loadHistory();
+</script>
 </body>
 </html>

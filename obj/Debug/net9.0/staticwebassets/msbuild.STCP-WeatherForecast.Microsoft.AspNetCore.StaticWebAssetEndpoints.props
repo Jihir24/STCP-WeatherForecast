@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/STCP-WeatherForecast/index.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1361"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Mar 2026 13:11:10 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E8\u002BYGKVIG8oM6FBI71iIjbRr\u002BcGN9VLc\u002BAilLhShstE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1640"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022E8\u002BYGKVIG8oM6FBI71iIjbRr\u002BcGN9VLc\u002BAilLhShstE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Mar 2026 10:47:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/STCP-WeatherForecast/index.sfdud510ff.html">
+    <StaticWebAssetEndpoint Include="_content/STCP-WeatherForecast/index.v54s7hc7kw.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sfdud510ff"},{"Name":"integrity","Value":"sha256-eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg="},{"Name":"label","Value":"_content/STCP-WeatherForecast/index.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1361"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022eO99wbBapMPeALZWdj7sLpqepENFKTJSmBVTQpKmAsg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Mar 2026 13:11:10 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v54s7hc7kw"},{"Name":"integrity","Value":"sha256-E8\u002BYGKVIG8oM6FBI71iIjbRr\u002BcGN9VLc\u002BAilLhShstE="},{"Name":"label","Value":"_content/STCP-WeatherForecast/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1640"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022E8\u002BYGKVIG8oM6FBI71iIjbRr\u002BcGN9VLc\u002BAilLhShstE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Mar 2026 10:47:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

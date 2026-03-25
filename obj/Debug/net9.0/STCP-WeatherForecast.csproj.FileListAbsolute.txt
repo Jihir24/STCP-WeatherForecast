@@ -141,4 +141,5 @@ C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\refint\
 C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\STCP-WeatherForecast.pdb
 C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\STCP-WeatherForecast.genruntimeconfig.cache
 C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\ref\STCP-WeatherForecast.dll
-C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\compressed\bmsxqfqo9d-sfdud510ff.gz
+C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\STCP-WeatherForecast.sourcelink.json
+C:\Users\Husai\OneDrive\Skrivebord\STCP-WeatherForecast\obj\Debug\net9.0\compressed\bmsxqfqo9d-v54s7hc7kw.gz

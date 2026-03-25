@@ -1,6 +1,7 @@
 using System.Text.Json;
 using STCP_WeatherForecast.Data;
 using STCP_WeatherForecast.Models;
+using STCP_WeatherForecast.Observers;
 
 namespace STCP_WeatherForecast.Services
 {
@@ -8,10 +9,26 @@ namespace STCP_WeatherForecast.Services
     public class WeatherService
     {
         private readonly AppDbContext _context;
+        private readonly List<IWeatherObserver> _observers = new();
 
         public WeatherService(AppDbContext context)
         {
             _context = context;
+        }
+
+        // Adds an observer
+        public void AddObserver(IWeatherObserver observer)
+        {
+            _observers.Add(observer);
+        }
+
+        // Notifies all observers when new temperature is received
+        private void NotifyObservers(double temperature)
+        {
+            foreach (var observer in _observers)
+            {
+                observer.Update(temperature);
+            }
         }
 
         // Fetch weather from API
@@ -24,10 +41,14 @@ namespace STCP_WeatherForecast.Services
 
             var json = JsonDocument.Parse(response);
 
-            return json.RootElement
+            var temperature = json.RootElement
                 .GetProperty("current_weather")
                 .GetProperty("temperature")
                 .GetDouble();
+
+            NotifyObservers(temperature);
+
+            return temperature;
         }
 
         // Save data to database
@@ -43,11 +64,20 @@ namespace STCP_WeatherForecast.Services
             await _context.SaveChangesAsync();
         }
 
-        // Get history
+        // Get full history
         public List<Weather> GetHistory()
         {
             return _context.WeatherData
                 .OrderByDescending(w => w.Id)
+                .ToList();
+        }
+
+        // Get the last 5 weather measurements
+        public List<Weather> GetLastFive()
+        {
+            return _context.WeatherData
+                .OrderByDescending(w => w.Id)
+                .Take(5)
                 .ToList();
         }
     }
